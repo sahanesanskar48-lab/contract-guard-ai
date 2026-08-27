@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rule_non_compete",
+    "category": "Non-Compete & Restraint of Trade",
+    "text": "Under Section 27 of the Indian Contract Act and standard fair labor principles, any contract clause that restrains an employee from exercising a lawful profession, trade, or business post-termination (especially exceeding 6 months or across large geographical bounds) is void and unenforceable."
+  },
+  {
+    "id": "rule_ip_rights",
+    "category": "Intellectual Property Ownership",
+    "text": "Intellectual Property assignments must only cover inventions and creations made during official working hours or using company resources and confidential data. Work done entirely on personal time and personal equipment belongs solely to the employee."
+  },
+  {
+    "id": "rule_employment_bond",
+    "category": "Employment Bond & Training Cost Penalty",
+    "text": "Employment service bonds requiring excessive monetary penalties are illegal unless the employer proves actual, substantial expenditure on specialized training provided to the candidate. Disproportionate exit fines are punitive and void."
+  },
+  {
+    "id": "rule_notice_period",
+    "category": "Notice Period & Buyout Terms",
+    "text": "Notice periods exceeding 90 days for non-executive roles or clauses where the employer reserves the right to terminate immediately without pay while forcing the employee to serve full notice are one-sided and predatory."
+  },
+  {
+    "id": "rule_unlimited_indemnity",
+    "category": "Liability & Indemnity",
+    "text": "Clauses requiring individual employees to provide uncapped personal financial indemnification for regular operational errors, business losses, or third-party client claims are unreasonable and legally risky."
+  },
+  {
+    "id": "rule_non_solicitation",
+    "category": "Non-Solicitation & Moonlighting Limits",
+    "text": "Non-solicitation clauses should only prevent direct poaching of active clients or colleagues for a reasonable period (under 12 months) and should not prevent benign professional networking or passive job applications."
+  },
+  {
+    "id": "rule_unilateral_changes",
+    "category": "Unilateral Contract Alteration",
+    "text": "Clauses granting the company the sole right to alter critical terms such as compensation, role, location, or working hours at will without the employee's explicit written consent are unfair."
+  },
+  {
+    "id": "rule_arbitration_jurisdiction",
+    "category": "Dispute Resolution & Jurisdiction",
+    "text": "Forcing employees to bear unilateral legal costs or setting dispute arbitration in distant/foreign jurisdictions with unreasonable hurdles to fair legal recourse is restrictive and unfair."
+  }
+]
