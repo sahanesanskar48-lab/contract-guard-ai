@@ -1,4 +1,4 @@
-**# ContractGuard AI ⚖️
+ContractGuard AI ⚖️
 
 > Autonomous Legal Risk Auditor and Safe Counter-Drafter powered by RAG and LLMs.
 
@@ -32,7 +32,8 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
                                  v
                      [ React Dashboard UI ]**
 ```
-====================================================================================================================================
+=======================================================================================
+
 * Tech Stack: 
 
 - Frontend: React (Vite), Tailwind CSS, Lucide Icons, Axios
@@ -40,7 +41,8 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
 - Vector Database: ChromaDB (In-Memory Vector Search)
 - LLM Engine: Groq API / High-throughput LLMs
 
-===================================================================================================================================
+=======================================================================================
+
 * Getting Started:
 
 1. Prerequisites
@@ -48,7 +50,8 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
 - Node.js 18+
 - Groq API Key
 
-===================================================================================================================================
+======================================================================================
+
 2. Backend Setup:
 
 Bash
@@ -63,19 +66,22 @@ source venv/bin/activate
 
 pip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab
 
-===================================================================================================================================
+=======================================================================================
+
 * Create a .env file in the backend/ directory:
 
 Code snippet
 GROQ_API_KEY=your_groq_api_key_here
 
-===================================================================================================================================
+========================================================================================
+
 * Start the FastAPI server:
 
 Bash
 uvicorn main:app --reload --port 8000
 
-====================================================================================================================================
+========================================================================================
+
 3. Frontend Setup
 Bash
 cd frontend
