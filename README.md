@@ -1,2 +1,85 @@
-# ContractGuard AI
-\n> Autonomous Legal Risk Auditor and Safe Counter-Drafter powered by RG and LLMs.\n\nContractGuard AI is a specialized legal technology application that analyzes employment contracts and offer letters to detect predatory clauses, excessive non-compete agreements, unreasonable service bonds, and unfair intellectual property assignments. It provides an overall risk score, actionable clause-by-clause legal risk assessments grounded on labor benchmarks, and generates safer counter-draft alternatives for candidates.\n\n---\n\n## Key Features\n\n- **Document Parsing & Chunking:** Extracts text from uploaded PDF contracts using `pypdf` with paragraph-level semantic segmentation.\n- **RAG Architecture (Retrieval-Augmented Generation):** Evaluates contract terms against standard labor benchmarks indexed inside ChromaDB.\n- **Strict Structured Output:** Enforces JSON schema guarantees via Pydantic to deliver risk levels (`HIGH`, `MEDIUM`, `LOW`), risk explanations, and alternative legal drafts.\n- **Interactive UI:** Built with React, Vite, and Tailwind CSS with one-click counter-draft copy utility and dynamic risk scoring badges.\n\n---\n\n## System Architecture\n\ng`ttext\n[ Upload PDF ]\n      |\n      v\n[ PyPDF Chunking ] ---> [ ChromaDB Vector Retrieval ] (Legal Benchmarks)\n                                  |\n                                  v\n                     [LLM Reasoning Engine ] (Groq API)\n                                  |\n                                  v\n                     [ Structured JSON Response ]\n                                  |\n                                  v\n                     [ React Dashboard UI ]\n```\n\n---\n\n## Tech Stack\n\n- **Frontend:** React (Vite), Tailwind CSS, Lucide Icons, Axios\n- **Backend:** FastAPI (Python), Uvicorn, Pydantic\n- **Vector Database:** ChromaDB (In-Memory Vector Search)\n- **LLM Engine:** Groq API / High-throughput LLMs\n\n---\n\n## Getting Started\n\n### 1. Prerequisites\n- Python 3.10+\n- Node.js 18+\n- Groq API Key\n\n### 2. Backend Setup\n```bash\ncd backend\npython -m venv venv\n\n# Windows\nvenv\Scripts\activate\n\n# macOS/Linuxnsource venv/bin/activate\n\npip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab\n```\n\nCreate a `.env` file in the `backend/` directory:\n```env\nGROQ_API_KEY=your_groq_api_key_here\n```\n\nStart the FastAPI server:\n```bash\nuvicorn main:app --reload --port 8000\n```\n\n### 3. Frontend Setup\n```bash\ncd frontend\nnpm install\nnpm run dev\n```\n\nThe application will be accessible at `http://localhost:5173`.\n
+**# ContractGuard AI ⚖️
+
+> Autonomous Legal Risk Auditor and Safe Counter-Drafter powered by RAG and LLMs.
+
+ContractGuard AI is a specialized legal technology application that analyzes employment contracts and offer letters to detect predatory clauses, excessive non-compete agreements, unreasonable service bonds, and unfair intellectual property assignments. It provides an overall risk score, actionable clause-by-clause legal risk assessments grounded on labor benchmarks, and generates safer counter-draft alternatives for candidates.
+
+---
+
+## Key Features
+
+- **Document Parsing & Chunking:** Extracts text from uploaded PDF contracts using `pypdf` with paragraph-level semantic segmentation.
+- **RAG Architecture (Retrieval-Augmented Generation):** Evaluates contract terms against standard labor benchmarks indexed inside ChromaDB.
+- **Strict Structured Output:** Enforces JSON schema guarantees via Pydantic to deliver risk levels (`HIGH`, `MEDIUM`, `LOW`), risk explanations, and alternative legal drafts.
+- **Interactive UI:** Built with React, Vite, and Tailwind CSS with one-click counter-draft copy utility and dynamic risk scoring badges.
+
+---
+
+## System Architecture
+
+```text
+[ Upload PDF ]
+      |
+      v
+[ PyPDF Chunking ] ---> [ ChromaDB Vector Retrieval ] (Legal Benchmarks)
+                                 |
+                                 v
+                     [ LLM Reasoning Engine ] (Groq API)
+                                 |
+                                 v
+                     [ Structured JSON Response ]
+                                 |
+                                 v
+                     [ React Dashboard UI ]**
+```
+====================================================================================================================================
+* Tech Stack: 
+
+- Frontend: React (Vite), Tailwind CSS, Lucide Icons, Axios
+- Backend: FastAPI (Python), Uvicorn, Pydantic
+- Vector Database: ChromaDB (In-Memory Vector Search)
+- LLM Engine: Groq API / High-throughput LLMs
+
+===================================================================================================================================
+* Getting Started:
+
+1. Prerequisites
+- Python 3.10+
+- Node.js 18+
+- Groq API Key
+
+===================================================================================================================================
+2. Backend Setup:
+
+Bash
+cd backend
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
+pip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab
+
+===================================================================================================================================
+* Create a .env file in the backend/ directory:
+
+Code snippet
+GROQ_API_KEY=your_groq_api_key_here
+
+===================================================================================================================================
+* Start the FastAPI server:
+
+Bash
+uvicorn main:app --reload --port 8000
+
+====================================================================================================================================
+3. Frontend Setup
+Bash
+cd frontend
+npm install
+npm run dev
+
+The application will be accessible at http://localhost:5173.
