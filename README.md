@@ -30,7 +30,7 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
                      [ Structured JSON Response ]
                                  |
                                  v
-                     [ React Dashboard UI ]**
+                     [ React Dashboard UI ]
 ```
 =======================================================================================
 
@@ -41,7 +41,7 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
 - Vector Database: ChromaDB (In-Memory Vector Search)
 - LLM Engine: Groq API / High-throughput LLMs
 
-=======================================================================================
+=========================================================================================
 
 * Getting Started:
 
@@ -50,7 +50,7 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
 - Node.js 18+
 - Groq API Key
 
-======================================================================================
+=========================================================================================
 
 2. Backend Setup:
 
@@ -66,7 +66,7 @@ source venv/bin/activate
 
 pip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab
 
-=======================================================================================
+========================================================================================
 
 * Create a .env file in the backend/ directory:
 
