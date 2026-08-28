@@ -71,6 +71,7 @@ pip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab
 * Create a .env file in the backend/ directory:
 
 Code snippet
+
 GROQ_API_KEY=your_groq_api_key_here
 
 ========================================================================================
@@ -78,14 +79,18 @@ GROQ_API_KEY=your_groq_api_key_here
 * Start the FastAPI server:
 
 Bash
+
 uvicorn main:app --reload --port 8000
 
 ========================================================================================
 
 3. Frontend Setup
 Bash
+
 cd frontend
+
 npm install
+
 npm run dev
 
 The application will be accessible at http://localhost:5173.
