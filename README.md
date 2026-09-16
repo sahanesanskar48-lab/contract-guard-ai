@@ -202,6 +202,7 @@ React Dashboard
 
 --------------------------------------------------------------------------------------------
 * Disclaimer:
+  
 ContractGuard AI is an educational and technical project intended to assist users in identifying potentially concerning contract clauses.
 
 It does not provide legal advice and should not replace consultation with a qualified legal professional.
