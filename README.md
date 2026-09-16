@@ -51,6 +51,7 @@ Display the results through the React-based dashboard.
 
 ---------------------------------------------------------------------------------------
 * Tech Stack:
+
   
 Frontend-
 
@@ -64,6 +65,7 @@ Lucide Icons
 
 Axios
 
+
 Backend-
 
 FastAPI
@@ -74,11 +76,13 @@ Uvicorn
 
 Pydantic
 
+
 Vector Database-
 
 ChromaDB
 
 In-Memory Vector Search
+
 
 LLM Engine-
 
@@ -115,6 +119,7 @@ Navigate to the backend directory:
 
 cd backend
 
+
 Create a virtual environment:
 
 python -m venv venv
@@ -126,6 +131,7 @@ venv\Scripts\activate
 -For macOS/Linux
 
 source venv/bin/activate
+
 
 Install the required dependencies:
 
@@ -156,13 +162,16 @@ Open a new terminal and navigate to the frontend directory:
 
 cd frontend
 
+
 Install the frontend dependencies:
 
 npm install
 
+
 Start the development server:
 
 npm run dev
+
 
 The application will be accessible at:
 
