@@ -1,8 +1,10 @@
-ContractGuard AI ⚖️
+# ContractGuard AI ⚖️
 
 > Autonomous Legal Risk Auditor and Safe Counter-Drafter powered by RAG and LLMs.
 
-ContractGuard AI is a specialized legal technology application that analyzes employment contracts and offer letters to detect predatory clauses, excessive non-compete agreements, unreasonable service bonds, and unfair intellectual property assignments. It provides an overall risk score, actionable clause-by-clause legal risk assessments grounded on labor benchmarks, and generates safer counter-draft alternatives for candidates.
+ContractGuard AI is a specialized legal technology application that analyzes employment contracts and offer letters to detect predatory clauses, excessive non-compete agreements, unreasonable service bonds, and unfair intellectual property assignments.
+
+It provides an overall risk score, actionable clause-by-clause legal risk assessments grounded on labor benchmarks, and generates safer counter-draft alternatives for candidates.
 
 ---
 
@@ -32,65 +34,124 @@ ContractGuard AI is a specialized legal technology application that analyzes emp
                                  v
                      [ React Dashboard UI ]
 ```
-===========================================================================================
+--------------------------------------------------------------------------------------
+* How It Works:
+Upload an employment contract or offer letter in PDF format.
+Extract and segment the document text using pypdf.
+Retrieve relevant labor benchmarks from ChromaDB.
+Use the Groq API-powered LLM to analyze contract clauses against the retrieved context.
+Generate structured risk assessments and safer counter-draft alternatives.
+Display the results through the React-based dashboard.
 
-* Tech Stack: 
+---------------------------------------------------------------------------------------
+* Tech Stack:
+Frontend-
+React
+Vite
+Tailwind CSS
+Lucide Icons
+Axios
 
-- Frontend: React (Vite), Tailwind CSS, Lucide Icons, Axios
-- Backend: FastAPI (Python), Uvicorn, Pydantic
-- Vector Database: ChromaDB (In-Memory Vector Search)
-- LLM Engine: Groq API / High-throughput LLMs
+Backend-
+FastAPI
+Python
+Uvicorn
+Pydantic
 
-===========================================================================================
+Vector Database-
+ChromaDB
+In-Memory Vector Search
 
-* Getting Started:
+LLM Engine-
+Groq API
+High-throughput LLMs
 
-1. Prerequisites
-- Python 3.10+
-- Node.js 18+
-- Groq API Key
+------------------------------------------------------------------------------------------------
+* Project Structure:
+contract-guard-ai/
+├── backend/
+├── frontend/
+├── .gitignore
+└── README.md
 
-==========================================================================================
+-----------------------------------------------------------------------------------------------
+* Getting Started
 
-2. Backend Setup:
+Prerequisites-
+Make sure you have the following installed:
+-Python 3.10+
+-Node.js 18+
+-Groq API Key
 
-Bash
+----------------------------------------------------------------------------------------------
+* Backend Setup:
+
+Navigate to the backend directory:
 cd backend
+
+Create a virtual environment:
 python -m venv venv
-
-# Windows
+-For Windows
 venv\Scripts\activate
-
-# macOS/Linux
+-For macOS/Linux
 source venv/bin/activate
 
+Install the required dependencies:
 pip install fastapi uvicorn chromadb groq pypdf python-dotenv reportlab
 
-========================================================================================
+--------------------------------------------------------------------------------------------
+* Environment Variables:
 
-* Create a .env file in the backend/ directory:
-
-Code snippet
-
+Create a .env file inside the backend/ directory:
 GROQ_API_KEY=your_groq_api_key_here
 
-========================================================================================
+------------------------------------------------------------------------------------------
+* Start the FastAPI Server:
 
-* Start the FastAPI server:
-
-Bash
-
+Run the following command from the backend/ directory:
 uvicorn main:app --reload --port 8000
 
-========================================================================================
+The backend server will run on:
+http://localhost:8000
 
-3. Frontend Setup
-Bash
+-------------------------------------------------------------------------------------------
+* Frontend Setup:
 
+Open a new terminal and navigate to the frontend directory:
 cd frontend
 
+Install the frontend dependencies:
 npm install
 
+Start the development server:
 npm run dev
 
-The application will be accessible at http://localhost:5173.
+The application will be accessible at:
+http://localhost:5173
+
+-------------------------------------------------------------------------------------------
+* Application Workflow:
+PDF Contract
+     |
+     v
+Document Parsing
+     |
+     v
+Text Chunking
+     |
+     v
+ChromaDB Retrieval
+     |
+     v
+Groq LLM Analysis
+     |
+     v
+Structured Risk Assessment
+     |
+     v
+React Dashboard
+
+--------------------------------------------------------------------------------------------
+* Disclaimer:
+ContractGuard AI is an educational and technical project intended to assist users in identifying potentially concerning contract clauses.
+It does not provide legal advice and should not replace consultation with a qualified legal professional.
