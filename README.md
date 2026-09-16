@@ -177,17 +177,6 @@ The application will be accessible at:
 
 http://localhost:5173
 
--------------------------------------------------------------------------------------------
-* Application Workflow:
-
-PDF Contract---> 
-Document Parsing-->     
-Text Chunking-->    
-ChromaDB Retrieval-->     
-Groq LLM Analysis-->    
-Structured Risk Assessment-->    
-React Dashboard
-
 --------------------------------------------------------------------------------------------
 * Disclaimer:
   
