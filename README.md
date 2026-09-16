@@ -180,24 +180,18 @@ http://localhost:5173
 -------------------------------------------------------------------------------------------
 * Application Workflow:
 
-PDF Contract
-     |
-     v
-Document Parsing
-     |
-     v
-Text Chunking
-     |
-     v
-ChromaDB Retrieval
-     |
-     v
-Groq LLM Analysis
-     |
-     v
-Structured Risk Assessment
-     |
-     v
+PDF Contract--->
+     
+Document Parsing-->
+     
+Text Chunking-->
+     
+ChromaDB Retrieval-->
+     
+Groq LLM Analysis-->
+     
+Structured Risk Assessment-->
+     
 React Dashboard
 
 --------------------------------------------------------------------------------------------
