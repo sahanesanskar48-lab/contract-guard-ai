@@ -36,11 +36,17 @@ It provides an overall risk score, actionable clause-by-clause legal risk assess
 ```
 --------------------------------------------------------------------------------------
 * How It Works:
+  
 Upload an employment contract or offer letter in PDF format.
+
 Extract and segment the document text using pypdf.
+
 Retrieve relevant labor benchmarks from ChromaDB.
+
 Use the Groq API-powered LLM to analyze contract clauses against the retrieved context.
+
 Generate structured risk assessments and safer counter-draft alternatives.
+
 Display the results through the React-based dashboard.
 
 ---------------------------------------------------------------------------------------
